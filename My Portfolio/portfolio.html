@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="./images/Favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeesh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>Zeesh</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero panel reveal portfolio-hero">
+        <div class="portfolio-hero-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Projects with polish, purpose and personality.</h1>
+          <p class="lead">A selection of my web, game, UI/UX and university projects. Each project helped me build stronger skills in front-end development, creative design, problem-solving and presenting ideas clearly.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#project-grid">Browse Projects</a>
+            <a class="btn btn-ghost" href="https://github.com/ZeeshanKhaled" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="project-overview" aria-label="Project overview">
+          <p class="section-tag">Project Details</p>
+
+          <details class="overview-project project-accordion featured" open>
+            <summary>
+              <span>Game • Web</span>
+              <h2>Blackjack Game</h2>
+              <p>A custom browser card game with bot play, polished table styling, turn logic, power-card rules and a strong arcade identity.</p>
+            </summary>
+            <div class="overview-extra">
+              <p><strong>What it shows:</strong> front-end game logic, custom rules, UI polish, bot-table flow and a strong visual theme.</p>
+              <ul class="clean-list compact-list">
+                <li>Built with HTML, CSS and JavaScript.</li>
+                <li>Includes card matching, power cards, knock rules and bot play.</li>
+                <li>Designed to feel more like an arcade table than a plain web page.</li>
+              </ul>
+              <a class="text-link" href="https://zeeshankhaled.github.io/Blackjack-Game/" target="_blank" rel="noopener">Open live project</a>
+            </div>
+          </details>
+
+          <details class="overview-project project-accordion">
+            <summary>
+              <span>Game • JavaScript</span>
+              <h3>Dodge The Blocks</h3>
+              <p>A neon arcade-style browser game built around reflex gameplay, difficulty settings, unlocks and a clean game UI.</p>
+            </summary>
+            <div class="overview-extra">
+              <p><strong>What it shows:</strong> canvas-style gameplay thinking, keyboard controls, difficulty options and simple replayable mechanics.</p>
+              <ul class="clean-list compact-list">
+                <li>Focuses on fast movement, dodging and score chasing.</li>
+                <li>Uses a dark neon interface with character/loadout options.</li>
+                <li>Shows how small browser games can still feel polished.</li>
+              </ul>
+              <a class="text-link" href="https://zeeshankhaled.github.io/Dodge-The-Blocks/" target="_blank" rel="noopener">Open live project</a>
+            </div>
+          </details>
+
+          <details class="overview-project project-accordion">
+            <summary>
+              <span>Product Website • UI/UX</span>
+              <h3>SunSync</h3>
+              <p>A smart lamp concept website focused on routines, lighting modes, product storytelling and responsive page design.</p>
+            </summary>
+            <div class="overview-extra">
+              <p><strong>What it shows:</strong> product presentation, design consistency, teamwork, responsive sections and clear user-focused storytelling.</p>
+              <ul class="clean-list compact-list">
+                <li>Explains the smart lamp idea through features, use cases and technical sections.</li>
+                <li>Uses warm/cool lighting visuals to match the product concept.</li>
+                <li>Built as part of a university team project.</li>
+              </ul>
+              <a class="text-link" href="https://zeeshankhaled.github.io/SunSync/" target="_blank" rel="noopener">Open live project</a>
+            </div>
+          </details>
+
+          <details class="overview-project project-accordion">
+            <summary>
+              <span>University • Web</span>
+              <h3>Data Analytics Website</h3>
+              <p>A multi-page university website using navigation, charts, references, structured content and accessibility-focused layout choices.</p>
+            </summary>
+            <div class="overview-extra">
+              <p><strong>What it shows:</strong> early web development progress, multi-page structure, content organisation and basic data visualisation.</p>
+              <ul class="clean-list compact-list">
+                <li>Includes pages for home, news/resources, tools, contact and references.</li>
+                <li>Uses tables, charts, navigation and a consistent colour palette.</li>
+                <li>Shows the foundation of later front-end projects.</li>
+              </ul>
+              <a class="text-link" href="https://zeeshankhaled.github.io/Data-Analytics-website/" target="_blank" rel="noopener">Open live project</a>
+            </div>
+          </details>
+        </aside>
+      </section>
+
+      <section class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="university">University</button>
+      </section>
+
+      <section class="card-grid reveal filter-grid" id="project-grid">
+        <article class="project-card panel" data-category="game web">
+          <div class="project-thumb thumb-one"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">Game</span>
+              <span class="pill">Front-End</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+            <h3>Blackjack Game</h3>
+            <p>A custom browser card game with bot play, power-card rules, knock mechanics and a polished arcade table interface.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="https://zeeshankhaled.github.io/Blackjack-Game/" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn btn-ghost small" href="https://github.com/ZeeshanKhaled/Blackjack-Game" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel" data-category="game web">
+          <div class="project-thumb thumb-two"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">Game</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+            <h3>Dodge The Blocks</h3>
+            <p>A fast browser game focused on dodging blocks, reacting quickly, unlocking options and keeping the interface clean and arcade-like.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="https://zeeshankhaled.github.io/Dodge-The-Blocks/" target="_blank" rel="noopener">View Project</a>
+              <a class="btn btn-ghost small" href="https://github.com/ZeeshanKhaled/Dodge-The-Blocks" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel" data-category="web">
+          <div class="project-thumb thumb-three"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">Web</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+            <h3>SunSync</h3>
+            <p>A university product website for a smart lamp concept, designed around sleep routines, focus lighting, team roles and product storytelling.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="https://zeeshankhaled.github.io/SunSync/" target="_blank" rel="noopener">View Project</a>
+              <a class="btn btn-ghost small" href="portfolio.html#project-grid">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel" data-category="university ai">
+          <div class="project-thumb thumb-four"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">UI/UX</span>
+              <span class="pill">College</span>
+              <span class="pill">Coursework</span>
+            </div>
+            <h3>Life Lift</h3>
+            <p>A UI/UX concept for an AI support chatbot, designed around mood tracking, progress screens, journaling and supportive daily guidance.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="#">Read More</a>
+              <a class="btn btn-ghost small" href="#">Notebook</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel" data-category="web university">
+          <div class="project-thumb thumb-five"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Figma</span>
+              <span class="pill">Coursework</span>
+            </div>
+            <h3>Data Analytics website</h3>
+            <p>A first university web development project built as a multi-page data analytics website with navigation, charts, tables and references.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="https://zeeshankhaled.github.io/Data-Analytics-website/" target="_blank" rel="noopener">View Site</a>
+              <a class="btn btn-ghost small" href="https://github.com/ZeeshanKhaled/Data-Analytics-website" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel" data-category="game university">
+          <div class="project-thumb thumb-six"></div>
+          <div class="project-body">
+            <div class="pill-row">
+              <span class="pill">Interactive</span>
+              <span class="pill">Build</span>
+            </div>
+            <h3>Extra Project Slot</h3>
+            <p>A placeholder slot reserved for another project I want to feature as my portfolio continues to grow.</p>
+            <div class="project-links">
+              <a class="btn btn-secondary small" href="#">Project</a>
+              <a class="btn btn-ghost small" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built as part of Zeeshan's personal portfolio.</p>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
